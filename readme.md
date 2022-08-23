@@ -1,0 +1,1 @@
+# A blog project to practice EJS and Express routing.
