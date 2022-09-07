@@ -4,14 +4,14 @@
 
     <h1>Home</h1>
     <p> <%= homeStartingContent %></p>
-        
-    <% blog.forEach(function(post){ %>
-        <h2><%=post.newPostTitle%></h2>
-        <p><%=post.newBlogPost%></p>
-    <% }); %>
-        
-   
 
-
-
+    <div class="container-fluid">    
+        <% blog.forEach(function(post){ %>
+            <h2><%=post.newPostTitle%></h2>
+            <p>
+                <%=post.newBlogPost.substring(1,100) + " ... "%>
+                <a href="/blog/<%= post.newPostTitle %>" class="link-secondary">Read More</a>
+            </p>
+        <% }); %>     
+    </div>
 <%- include("partials/footer"); -%>

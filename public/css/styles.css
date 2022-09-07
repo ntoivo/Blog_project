@@ -1,9 +1,8 @@
-
-
-.container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
+html {
+	min-height: 100%;
+	position: relative;
 }
+
 
 .nav-item  li a:hover {
     color: #626766 !important;
